@@ -9,7 +9,28 @@
 .page
     {background-color: var(--white-text-color);
     color: var(--primary-text-color);
-    font-family: Roboto, sans-serif}
+    font-family: Roboto, sans-serif;}
+/*header*/
+.page-header
+    {background-color: var( --white-text-color);}
+
+/* list утилити*/
+.list 
+    {list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+/*container*/
+.container
+    {width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.section {
+     padding-top: 94px;
+    padding-bottom: 94px;}
 /*logo*/
 .logo 
     {font-family: Raleway, cursive;
@@ -30,29 +51,60 @@
     line-height: 1.14;
     letter-spacing: 0.02em;
     text-decoration: none;}
+
+.site-nav 
+    {display: flex;
+    margin-left: 93px; }
+.site-nav .iten + .iten
+    {margin-left: 50px;}
+.site-nav .link 
+    {display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;}
+
 .site-nav .link:hover,
 .site-nav .link:focus
 .list 
-    { color:var(--accent-color) }
+    { color:var(--accent-color);}
 
-/* list */
-.list 
-    {list-style: none;
-      }
+    /*auth-nav*/
+.auth-nav
+    { display: flex;
+    margin-left: auto;}
+    .auth-nav .iten + .iten
+    {margin-left: 50px;}
+    
+    /*header-nav*/
+    .header-nav 
+    {display: flex;
+    align-items: center;}
+
+
 /* hero */
 .hero 
-    {background-color: #2F303A;text-align: center;}
-.hero-title {
+    {
+        padding: 200px 0 200px 0;
+    background-color: #2F303A;
+    text-align: center;}
+.hero-title{
+    margin-top: 0;
+    margin-bottom: 30px;
+    
     font-weight: 900;
     font-size: 44px;
     line-height: 1.4;
-    text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
     color:  var(--white-text-color);
+
 }
 /* button */
 .button { 
+    display: inline-block;
+    border-radius: 4px;
+    padding: 10px 32px;
+    min-width: 200px;
+    
     color:var(--white-text-color);
     background-color:var(--accent-color);
     border-color: var(--accent-color);
@@ -62,13 +114,29 @@
     letter-spacing: 0.06em;
 }
 /*.features*/
+.features {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+.features-list 
+    {display: flex;}
+.features p {
+    margin-top: 0;
+    margin-bottom: 0px;
+}
 .features-title {
+    margin-top: 0;
+    margin-bottom: 10px;
+    
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.03em;
     text-transform: uppercase;
 }
+.features-title, .work-title, .team-black, .team
+    { color: #212121;}
+
 .description-title {
     font-weight: 400;
     font-size: 14px;
@@ -76,33 +144,58 @@
     letter-spacing: 0.03em;
 }
 /*.work* .team*/
+.work
+    {padding-top: 0;
+    padding-bottom: 94px;}
 .work-title,.team {
+    margin-top: 0;
+    margin-bottom: 50px; 
+    
     font-weight: 700;
     font-size: 36px;
     line-height: 1.2;
     text-align: center;
     letter-spacing: 0.03em;
 }
+.work-list {display: flex;}
+.work-list .foto + .foto {margin-left: 30px;}
 /*.team*/
 .teams 
-    {background-color: #F5F4FA;;}
+    {background-color: #F5F4FA;
+    text-align: center;}
 .team-black {
+    margin-top: 0;
+    margin-bottom: 10px;
+    padding-top: 30px;
+
     font-weight: 500;
     font-size: 16px;
     line-height: 1.2;
-    text-align: center;
     letter-spacing: 0.03em;
 }
 .team-text {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-bottom: 30px;
+
     font-weight: 400;
     font-size: 16px;
     line-height: 1.2;
-    text-align: center;
-    letter-spacing: 0.03em;}
+    letter-spacing: 0.03em;
+  
+}
+.team-list {display: flex;}
+.team-list .team-box + .team-box {margin-left: 30px;}
+.team-box {box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+    }
+  
 /*adress*/
 address{font-style: normal; }
 
 .adress {
+    
+
     font-style: normal;
     font-size: 14px;
     line-height: 1.7;
@@ -110,7 +203,7 @@ address{font-style: normal; }
     color:  var(--white-text-color);
     text-decoration: none;
 }
-   
+ 
     
 /* contact */
 .contact-info {
@@ -124,25 +217,27 @@ address{font-style: normal; }
     text-decoration: none;}
 .contact:hover,
 .contact:focus
-{ color:var(--white-text-color)
- }
-
-.current{ color:var(--accent-color);
+    {color:var(--accent-color)
+    }
+.current
+    {color:var(--accent-color);
      text-decoration: none;}
- .features-title, .work-title, .team-black, .team
-{ color: #212121;}
-/*header*/
-.header
-    {background-color: var( --white-text-color);}
+
+.contact-tel {padding-bottom: 60px;}
 /*footer*/
-.footer {background-color: #2F303A}
+.footer 
+    {padding-top: 60px;
+    padding-bottom: 60px;
+
+    background-color: #2F303A;;}
+
+.logo-footer { padding-top: 60px;}
 
 
 
 /*portfolio*/
 .main-nav { color: var(--main-black-color);
 background-color: var(--white-text-color);}
-
 .button-black 
     {color:var(--main-black-color);
     background-color:#F5F4FA;
@@ -150,23 +245,40 @@ background-color: var(--white-text-color);}
     font-weight: 500;
     font-size: 16px;
     line-height: 1.6;
-    letter-spacing: 0.03em;}
+    letter-spacing: 0.03em;
+
+    display: inline-block;
+    border-radius: 4px;
+    padding: 6px 22px;
+    min-width: 73px;
+    text-align: center;
+}
     .button-black:hover,
     .button-black:focus
     { color: var(--white-text-color);
     background-color: var(--accent-color);}
-
 /*proekt*/
 .proekt
     {text-decoration: none;}
 .proekt-name
-    {font-weight: 700;
+    {margin-top: 0;
+    margin-bottom: 4px;
+
+    font-weight: 700;
     font-size: 18px;
     line-height: 2;
-    color: #212121;}
+    color: #212121;
+
+}
+
 .proekt-group 
-    {font-weight: 400;
+    {margin-top: 0;
+    margin-bottom: 0;
+        
+    font-weight: 400;
     font-size: 16px;
     line-height: 1.9;
     letter-spacing: 0.03em;
-    color: #757575;}
+    color: #757575;
+
+}
